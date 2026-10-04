@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09111d">
+  <meta name="description" content="A private, browser-based phishing email triage tool that explains common warning signs.">
+  <title>Phishing Email Analyser · SignalCheck</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body><div class="shell">
+  <header class="topbar"><a class="brand" href="#top"><span class="brand-icon">⌁</span> Signal<span>Check</span></a><div class="top-right"><span class="local"><i></i> 100% local analysis</span><span class="repo-link">STATIC · NO BUILD</span></div></header>
+  <main id="top">
+    <section class="hero"><div class="eyebrow">EMAIL SECURITY <b>·</b> EDUCATIONAL TOOL</div><h1>Spot the signs.<br><em>Stay one step ahead.</em></h1><p>Paste a suspicious email to uncover common phishing tactics. Your analysis stays right here in your browser.</p><div class="assurances"><span>◇ No uploads</span><b>·</b><span>▣ No tracking</span><b>·</b><span>◎ Works offline</span></div></section>
+    <section class="workspace" aria-label="Email analysis workspace">
+      <section class="panel input-panel"><div class="panel-head"><div><span class="step">01</span><h2>Examine an email</h2></div><span class="private-label">PRIVATE BY DESIGN</span></div>
+        <label class="field-label" for="emailInput">EMAIL CONTENT <small>Paste the message and, if available, its headers</small></label>
+        <textarea id="emailInput" spellcheck="false" placeholder="From: support@example.test&#10;Reply-To: different-address@example.test&#10;Subject: Action required&#10;&#10;Paste the full email here, including headers and links, for a more complete analysis…"></textarea>
+        <div class="meta"><span id="charCount">0 characters</span><button id="clearButton" class="clear" type="button">Clear</button></div>
+        <button id="analyseButton" class="analyse" type="button"><span>Analyse email</span><b>→</b></button>
+        <div class="samples"><div class="sample-head"><span>TRY A SAMPLE</span><small>No real links or domains</small></div><div id="sampleGrid" class="sample-grid"></div></div>
+      </section>
+      <section class="panel results-panel" aria-live="polite" aria-label="Analysis results" id="resultsPanel">
+        <div id="emptyState" class="empty"><div class="shield">✓</div><div class="empty-eyebrow">YOUR ANALYSIS, AT A GLANCE</div><h2>Clarity starts<br>with a closer look.</h2><p>Paste an email and run your first analysis. Findings will appear here with a transparent score and practical next steps.</p><hr><small>▣ Your email never leaves this device.</small></div>
+        <div id="resultContent" class="result-content" hidden></div>
+      </section>
+    </section>
+    <section class="learning"><div class="eyebrow">BUILT FOR LEARNING</div><h2>Understand the <em>why</em>, not just the score.</h2><div class="learning-grid"><article><b>01</b><div class="icon">⌁</div><h3>Signals, explained</h3><p>Each warning sign has a defined weight and a clear explanation. No mystery numbers.</p></article><article><b>02</b><div class="icon">◎</div><h3>Private by default</h3><p>All checks run in your browser. No accounts, uploads, analytics, or external APIs.</p></article><article><b>03</b><div class="icon">↗</div><h3>Safer next steps</h3><p>Learn how to verify a message safely before replying, clicking, or opening anything.</p></article></div></section>
+    <aside class="safety"><span>!</span><p><strong>A triage tool, not a verdict.</strong> This educational tool spots common warning signs; it cannot prove an email is safe or malicious. Never click suspicious links or open attachments to test them. Verify important messages through the organisation’s official website, app, or a contact method you already trust.</p></aside>
+  </main><footer><a href="#top">SignalCheck</a><span>Made for curious minds. Analysis stays on your device.</span><a href="#top">Back to top ↑</a></footer>
+</div></body></html>
